@@ -19,7 +19,7 @@ def get_japanese_emoticon(path, emoticon)
   sorry_message = "Sorry, that emoticon was not found"
   
   result = emoticon_hash["get_emoticon"][emoticon]
-  if result == nil 
+  unless result
     result = sorry_message
   end
   result
