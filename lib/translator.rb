@@ -30,7 +30,7 @@ def get_english_meaning(path, emoticon)
   sorry_message = "Sorry, that emoticon was not found"
   
   result = emoticon_hash["get_meaning"][emoticon]
-  if result == nil 
+  unless result
     result = sorry_message
   end
   result
